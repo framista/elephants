@@ -28,7 +28,13 @@ export const fetchElephants = () => {
     axios
       .get(endpoint)
       .then((response) => {
-        const elephants = response.data;
+        const elephants = response.data.filter(
+          (el) =>
+            el.index && !el.image.includes('missing') && el.name.length < 12
+        );
+        elephants.sort((a, b) =>
+          a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+        );
         dispatch(fetchElephantsSuccess(elephants));
       })
       .catch((error) => {
