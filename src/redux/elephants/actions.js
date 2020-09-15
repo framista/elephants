@@ -20,10 +20,13 @@ export const fetchElephantsFailure = (error) => ({
 });
 
 export const fetchElephants = () => {
+  const herokuAnywhareUrl = 'https://cors-anywhere.herokuapp.com/';
+  const elephantsUrl = 'https://elephant-api.herokuapp.com/elephants';
+  const endpoint = herokuAnywhareUrl + elephantsUrl;
   return (dispatch) => {
     dispatch(fetchElephantsRequest);
     axios
-      .get('https://elephant-api.herokuapp.com/elephants')
+      .get(endpoint)
       .then((response) => {
         const elephants = response.data;
         dispatch(fetchElephantsSuccess(elephants));
