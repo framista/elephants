@@ -1,4 +1,5 @@
 import React from 'react';
+import 'normalize.css';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
