@@ -3,7 +3,7 @@ import 'normalize.css';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
-import ElephantContainer from './components/elephant-container';
+import ElephantContainer from './components/container';
 
 function App() {
   return (

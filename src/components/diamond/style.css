@@ -1,7 +1,7 @@
-.elephant-diamond__li {
+.diamond__li {
   position: relative;
 }
-.elephant-diamond {
+.diamond {
   transform: rotate(45deg);
   margin: 3rem 2rem;
   width: 100px;
@@ -12,11 +12,11 @@
   cursor: pointer;
 }
 
-.elephant-diamond__li:hover .elephant-diamond {
+.diamond__li:hover .diamond {
   opacity: 1;
 }
 
-.elephant-diamond__image--background {
+.diamond__image--background {
   transform: rotate(-45deg) scale(1.4);
   width: 100%;
   height: 100%;
@@ -25,7 +25,7 @@
   background-position: center center;
 }
 
-.elephant-diamond__name {
+.diamond__name {
   position: absolute;
   top: 160px;
   left: 50%;
@@ -38,13 +38,13 @@
   font-size: 0.8rem;
   /* transform: rotate(-45deg); */
 }
-.elephant-diamond:hover + .elephant-diamond__name,
-.elephant-diamond__name:hover {
+.diamond:hover + .diamond__name,
+.diamond__name:hover {
   background: #0c9437;
 }
 
 @media (min-width: 576px) {
-  .elephant-diamond {
+  .diamond {
     margin: 3rem;
   }
 }

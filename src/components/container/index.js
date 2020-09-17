@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchElephants } from '../../redux/elephants/actions';
-import ElephantDiamond from '../elephant-diamond';
+import ListDiamond from '../list-diamond';
+import ListAccordian from '../list-accordian';
 import './style.css';
 
 const ElephantContainer = ({ fetchElephants, loading, elephants, error }) => {
@@ -14,13 +15,8 @@ const ElephantContainer = ({ fetchElephants, loading, elephants, error }) => {
   } else if (error) {
     return <div>{error}</div>;
   }
-  return (
-    <ul className="elephant-container">
-      {elephants.map((elephant) => (
-        <ElephantDiamond key={elephant._id} elephant={elephant} />
-      ))}
-    </ul>
-  );
+  // return <ListDiamond elephants={elephants} />;
+  return <ListAccordian elephants={elephants} />;
 };
 
 const mapStateToProps = (state) => ({
