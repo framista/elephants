@@ -1,0 +1,8 @@
+.list-accordian__letter {
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  background: #0c9437;
+  color: #fff;
+  font-weight: 800;
+}
