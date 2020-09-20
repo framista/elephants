@@ -19,7 +19,10 @@ const Accordian = ({ elephant, toogleOpen }) => {
   console.log(elephant);
   return (
     <div className="accordian">
-      <div className="accordian__header" onClick={() => toogleOpen(_id)}>
+      <div
+        className={`accordian__header ${open ? 'accordian__header--open' : ''}`}
+        onClick={() => toogleOpen(_id)}
+      >
         {name}
         {open ? (
           <IoIosArrowDropup className="accordian__icon" />

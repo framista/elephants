@@ -8,6 +8,10 @@
   cursor: pointer;
   border-bottom: 2px solid #0c9437;
 }
+.accordian__header--open {
+  background: #0c9437;
+  color: #fff;
+}
 .accordian__header:hover {
   background: #0c9437;
 }
@@ -32,9 +36,6 @@
   max-height: 500px;
   padding: 2em 3rem 2em 2rem;
   border-bottom: 2px solid #0c9437;
-}
-.accordian__body--open + .accordion__header {
-  background: #0c9437;
 }
 .accordian__image {
   width: 95%;
