@@ -4,8 +4,19 @@ import './style.css';
 import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
 
 const Accordian = ({ elephant, toogleOpen }) => {
-  const { name, note, open, _id } = elephant;
-  // console.log(elephant);
+  const {
+    name,
+    note,
+    open,
+    _id,
+    image,
+    dob,
+    dod,
+    species,
+    sex,
+    affiliation,
+  } = elephant;
+  console.log(elephant);
   return (
     <div className="accordian">
       <div className="accordian__header" onClick={() => toogleOpen(_id)}>
@@ -17,7 +28,17 @@ const Accordian = ({ elephant, toogleOpen }) => {
         )}
       </div>
       <div className={`accordian__body ${open ? 'accordian__body--open' : ''}`}>
-        {note}
+        <div className="accordian__info">
+          <h2 className="accordian__name">{name}</h2>
+          <h3 className="accordian__affiliation">{affiliation}</h3>
+          <h4 className="accordian__species">
+            {dob} - {dod} / {species} / {sex}
+          </h4>
+          <p className="accordian__description">{note}</p>
+        </div>
+        <div className="accordian__image">
+          <img src={image} alt={name} />
+        </div>
       </div>
     </div>
   );
