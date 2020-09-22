@@ -4,4 +4,5 @@
   justify-content: space-around;
   padding: 2rem;
   list-style: none;
+  margin-top: calc(120px - 2em);
 }

@@ -32,8 +32,7 @@ const ListAccordian = ({ elephants }) => {
     );
   };
   return (
-    <div>
-      {/* {elephantsAccordian.length} */}
+    <div className="list-accordian">
       {elephantsAccordian.map((el) => {
         return (
           <Fragment key={el.letter}>

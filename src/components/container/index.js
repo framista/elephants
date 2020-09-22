@@ -12,6 +12,7 @@ const ElephantContainer = (props) => {
     fetchElephants();
     //eslint-disable-next-line
   }, []);
+
   if (loading) {
     return <div>Loading...</div>;
   } else if (error) {

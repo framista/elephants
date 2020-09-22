@@ -1,19 +1,37 @@
 .menu {
-  padding: 1em 2em;
+  padding: 0 1em;
+  height: 120px;
   display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 2px solid #0c9437;
 }
 .menu__btn {
   padding: 0.5em 1em;
   border-radius: 1em;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
   margin-right: 0.8em;
 }
 .menu__btn:hover {
-    background: #0c9437;
-    color: #fff;
+  background: #0c9437;
+  color: #fff;
 }
 .menu__btn--active {
-    border: 2px solid #0c9437;
+  border: 2px solid #0c9437;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    padding: 0 2em;
+  }
+  .menu__btn {
+    font-size: 2rem;
+  }
 }

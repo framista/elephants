@@ -1,6 +1,10 @@
+.list-accordian {
+  padding: 0 40px 40px;
+  margin-top: calc(120px + 40px);
+}
 .list-accordian__letter {
   position: sticky;
-  top: 0;
+  top: 120px;
   padding: 1em;
   background: #07511e;
   color: #fff;
