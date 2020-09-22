@@ -5,7 +5,9 @@ import ListDiamond from '../list-diamond';
 import ListAccordian from '../list-accordian';
 import './style.css';
 
-const ElephantContainer = ({ fetchElephants, loading, elephants, error }) => {
+const ElephantContainer = (props) => {
+  const { fetchElephants, loading, elephants, error, listType } = props;
+
   useEffect(() => {
     fetchElephants();
     //eslint-disable-next-line
@@ -14,15 +16,17 @@ const ElephantContainer = ({ fetchElephants, loading, elephants, error }) => {
     return <div>Loading...</div>;
   } else if (error) {
     return <div>{error}</div>;
+  } else if (listType === 'diamonds') {
+    return <ListDiamond elephants={elephants} />;
   }
-  // return <ListDiamond elephants={elephants} />;
   return <ListAccordian elephants={elephants} />;
 };
 
 const mapStateToProps = (state) => ({
-  loading: state.loading,
-  elephants: state.elephants,
-  error: state.error,
+  loading: state.elephants.loading,
+  elephants: state.elephants.elephants,
+  error: state.elephants.error,
+  listType: state.menu.listType,
 });
 
 const mapDispatchToProps = (dispatch) => {

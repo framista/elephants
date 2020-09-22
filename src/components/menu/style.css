@@ -1,0 +1,19 @@
+.menu {
+  padding: 1em 2em;
+  display: flex;
+}
+.menu__btn {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 0.8em;
+}
+.menu__btn:hover {
+    background: #0c9437;
+    color: #fff;
+}
+.menu__btn--active {
+    border: 2px solid #0c9437;
+}
