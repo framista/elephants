@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/elephants/static/css/main.cfb8fbe8.chunk.css",
+    "main.js": "/elephants/static/js/main.73e5dd3d.chunk.js",
+    "main.js.map": "/elephants/static/js/main.73e5dd3d.chunk.js.map",
+    "runtime-main.js": "/elephants/static/js/runtime-main.588a547b.js",
+    "runtime-main.js.map": "/elephants/static/js/runtime-main.588a547b.js.map",
+    "static/css/2.764ccc25.chunk.css": "/elephants/static/css/2.764ccc25.chunk.css",
+    "static/js/2.ccd65291.chunk.js": "/elephants/static/js/2.ccd65291.chunk.js",
+    "static/js/2.ccd65291.chunk.js.map": "/elephants/static/js/2.ccd65291.chunk.js.map",
+    "index.html": "/elephants/index.html",
+    "precache-manifest.5acbd3ee85483bb369c94882bf02433b.js": "/elephants/precache-manifest.5acbd3ee85483bb369c94882bf02433b.js",
+    "service-worker.js": "/elephants/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/elephants/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.cfb8fbe8.chunk.css.map": "/elephants/static/css/main.cfb8fbe8.chunk.css.map",
+    "static/js/2.ccd65291.chunk.js.LICENSE.txt": "/elephants/static/js/2.ccd65291.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.588a547b.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.ccd65291.chunk.js",
+    "static/css/main.cfb8fbe8.chunk.css",
+    "static/js/main.73e5dd3d.chunk.js"
+  ]
+}
